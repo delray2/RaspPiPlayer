@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Music Player</title>
+   <link href="../style.css" rel="stylesheet" type="text/css">
+   <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="sources">
+        <h3>Sources</h3>
+        <button onclick="selectSource('YouTube')">YouTube Music</button>
+        <button onclick="selectSource('Apple')">Apple Music</button>
+        <button onclick="selectSource('Spotify')">Spotify</button>
+    </div>
+    <div id="album-artwork">
+        <img src="album-artwork.jpg" alt="Album Artwork">
+    </div>
+    <div id="player-controls">
+        <button onclick="togglePlayPause()">&#9658; / &#10074;&#10074;</button>
+        <div id="time-elapsed">00:00</div>
+        <button onclick="seekRewind()">&#9664;</button>
+        <button onclick="showOutputPopup()">&#128266;</button>
+    </div>
+    <div id="output-popup">
+        <button onclick="selectOutput('Bluetooth')">Bluetooth Speaker</button>
+        <button onclick="selectOutput('Headphones')">Headphones</button>
+    </div>
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
